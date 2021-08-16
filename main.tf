@@ -99,14 +99,4 @@ output "key_vault_1_name" {
   value = azurerm_key_vault.key_vault_kv.name
 }
 
-output "tenant_id" {
-  value = data.azurerm_client_config.current.tenant_id
-}
 
-output "client_id" {
-  value = azuread_application.key_vault_app.application_id
-}
-
-output "client_secret" {
-  value = azuread_service_principal_password.key_vault_sp_pwd.value
-}
